@@ -15,6 +15,9 @@ userLocaltime       | userTimezoneOffset | userTimezoneLabel
 
 This time structure allow us to analyse the contribution on local time (if they were working in between 9-5, for example) but also if people from different timezones were working at the same time.
 
+user table:
+- 20180217: new column added 'invited'. Default is 0. Used for Matthew's system to track who has already being invited to Slack.
+
 IMPORTANT:
 - Tableau analyses the RAW date, considering the DB UTC local time.
 - MySQL workbench, when accesssing from the local machine it will show the machine local time! 
